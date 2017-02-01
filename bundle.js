@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -68,14 +68,11 @@
 
 	// Components
 
-	// import jquery from 'jquery';
-
-	// import './animation.js';
 
 	// CSS 
 	// Libs
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 1 */
@@ -21887,7 +21884,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Space+Mono);", ""]);
 
 	// module
-	exports.push([module.id, "/* ==== WEB FONTS ==== */\n\n\n\n.application {\n  background-color: #ccc;\n  padding: 10px;\n  margin-top: 20px;\n  height: auto;\n  /* border: 2px solid #222; */\n}\n\n.image_container {\n  background-color: #fff;\n  text-align: center;\n  width: 100%;\n  margin-left: 0;\n  margin-right: 0;\n}\n\n\nbutton {\n  background-color: royalblue;\n  width: 15px;\n  color: #ccc;\n  cursor: pointer;\n  opacity: .8;\n}\n\nbutton:hover {\n  opacity: 1;\n}\n\n.add_player {\n  width: 100px;\n  height: 30px;\n  position: relative;\n  top: -340px;\n  left: 430px;\n}\n\n.player_score {\n    position: relative;\n    top: -40px;\n    left: 271px;\n}\n\n/* ===== ELEMENT STYLES ===== */\n* {\n  box-sizing: border-box;\n}\nbody {\n  color: #576366;\n  margin: 0;\n  font-family: 'space mono', sans-serif;\n  animation: colorchange 25s; \n  animation-iteration-count: infinite;\n  background-size: fixed;\n}\n\n.main_container {\n  margin:  0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n}\n\n/* page animation */\n@keyframes slideIn{ 0% { opacity: 0; transform: translate3d(-50px,0,0); } 100% { opacity: 1; transform: translate3d(-0,0,0); }}\n@keyframes slideOut{ 0% { opacity: 1; transform: translate3d(0,0,0); } 100% { opacity: 0; transform: translate3d(50px,0,0); }}\n@keyframes slideUp{ 0% { opacity: 0; transform: translate3d(0,60px,0); } 100% { opacity: 1; transform: translate3d(0,0,0); }}\n@keyframes colorchange\n{\n  0%   {background: rgba(249, 229, 159, 0.28); }\n  50%  {background: rgba(245, 92, 92, 0.65);}\n  100% {background: rgba(249, 229, 159, 0.28);}\n}\n\n@-webkit-keyframes colorchange \n{\n  0%   {background: rgba(249, 229, 159, 0.28);}\n  50%  {background: rgba(245, 92, 92, 0.65);}\n  100% {background: rgba(249, 229, 159, 0.28);}\n}\n\n.pageLoad-enter{\n  opacity: 0;\n  animation: slideIn 0.6s cubic-bezier(0.165, 0.84,0.44,1);\n}\n\n.pageLoad-leave{\n  animation: slideOut 0.4s cubic-bezier(0.165, 0.84,0.44,1);\n  opacity: 1.0;\n}\n\n.pageLoad-appear{\n  opacity: 0;\n  animation: slideUp 0.6s cubic-bezier(0.165, 0.84,0.44,1);\n}", ""]);
+	exports.push([module.id, "/* ==== WEB FONTS ==== */\n\n/* ===== CONTAINER ELEMENT STYLES ===== */\n* {\n  box-sizing: border-box;\n}\nbody {\n  color: #576366;\n  margin: 0;\n  font-family: 'space mono', sans-serif;\n  background-color: #fff;\n}\n\n.main_container {\n  margin:  0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n}\n\n.application {\n  padding: 10px;\n  margin-top: 10px;\n  height: auto;\n} \n\n/* IMAGES */\n.photo_container {\n  background-color: #fff;\n  position: relative;\n  text-align: center;\n  height: 100%;\n  width: 100%;\n  margin: 0 auto; \n  left: 45px;\n}\n\n.outer_image {\n  width: 200px;\n  height: 130px;\n  overflow: hidden;\n  margin: 5px;\n  padding: 0;\n  float: left;\n  background-size: cover;\n  }\n\n.image {\n  background-size: cover;\n  width: 100%;\n  opacity: .8;\n  transition: .3s;\n}\n\n.image:hover {\n  opacity: 1;\n  transition: .3s;\n}\n\n/* SEARCH */\n.search_title {\n  opacity: .3;\n  margin: 0;\n}\n", ""]);
 
 	// exports
 
@@ -21896,7 +21893,7 @@
 /* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -21918,9 +21915,13 @@
 
 	var _reactFoundation2 = _interopRequireDefault(_reactFoundation);
 
-	var _child = __webpack_require__(223);
+	var _images = __webpack_require__(223);
 
-	var _child2 = _interopRequireDefault(_child);
+	var _images2 = _interopRequireDefault(_images);
+
+	var _input = __webpack_require__(224);
+
+	var _input2 = _interopRequireDefault(_input);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21930,22 +21931,22 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	// import $ from "jquery";
-
-
 	var App = function (_Component) {
 	  _inherits(App, _Component);
 
 	  function App(props, context) {
 	    _classCallCheck(this, App);
 
-	    // STATE
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props, context));
 
-	    _this.handleChange = _this.handleChange.bind(_this);
+	    _this.getJSON = _this.getJSON.bind(_this);
+	    _this.handle_input = _this.handle_input.bind(_this);
+	    // STATE
 	    _this.state = {
 	      name: 'public',
-	      words: ''
+	      words: '',
+	      images: [],
+	      search: ''
 	    };
 	    return _this;
 	  }
@@ -21953,11 +21954,27 @@
 	  _createClass(App, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      console.log('Component ' + this.props.name + ' Mounted');
+	      // console.log('Component ' + this.props.name + ' Mounted');
 	    }
 	  }, {
-	    key: 'handleChange',
-	    value: function handleChange() {}
+	    key: 'handle_input',
+	    value: function handle_input(e) {
+	      // console.log('handle input event!',e);
+	      this.setState({ search: e });
+	      setTimeout(this.getJSON, 20);
+	    }
+	  }, {
+	    key: 'getJSON',
+	    value: function getJSON() {
+	      var self = this;
+	      // console.log('in getjson',self.state.search);
+	      $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?', { tags: self.state.search,
+	        format: "json" }, function (results) {
+	        var images = results.items;
+	        self.setState({ images: images });
+	        // console.log(self.state);
+	      });
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -21965,15 +21982,26 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          _reactFoundation.Row,
-	          { className: 'display' },
+	          'div',
+	          { className: 'application' },
 	          _react2.default.createElement(
-	            _reactFoundation.Column,
-	            { medium: 8, large: 12 },
+	            _reactFoundation.Row,
+	            { className: 'display' },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'application' },
-	              _react2.default.createElement(_child2.default, { onChange: this.handleChange })
+	              _reactFoundation.Column,
+	              { large: 12 },
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Search: Flickr Public API'
+	              ),
+	              _react2.default.createElement(_input2.default, { onChange: this.handle_input }),
+	              _react2.default.createElement(
+	                'h1',
+	                { className: 'search_title' },
+	                this.state.search
+	              ),
+	              _react2.default.createElement(_images2.default, { images: this.state.images, search: this.state.search })
 	            )
 	          )
 	        )
@@ -21999,7 +22027,7 @@
 
 	exports.default = App;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "app.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "app.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 185 */
@@ -26592,9 +26620,89 @@
 /* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	'use strict';
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Images = function (_Component) {
+		_inherits(Images, _Component);
+
+		function Images(props) {
+			_classCallCheck(this, Images);
+
+			return _possibleConstructorReturn(this, (Images.__proto__ || Object.getPrototypeOf(Images)).call(this, props));
+		}
+
+		_createClass(Images, [{
+			key: "componentDidMount",
+			value: function componentDidMount() {
+				// console.log(this.props.name+' mounted');
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				if (this.props.search !== "") {
+					return _react2.default.createElement(
+						"div",
+						{ className: "photo_container" },
+						this.props.images.map(function (thang, i) {
+							return _react2.default.createElement(
+								"div",
+								{ className: "outer_image", key: i },
+								_react2.default.createElement(
+									"a",
+									{ href: thang.link, target: "_blank" },
+									_react2.default.createElement("img", { className: "image", src: thang.media.m, alt: "" })
+								)
+							);
+						})
+					);
+				} else {
+					return _react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement("div", null)
+					);
+				}
+			}
+		}]);
+
+		return Images;
+	}(_react.Component);
+
+	Images.defaultProps = {
+		name: 'Images'
+	};
+
+	exports.default = Images;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "images.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -26616,53 +26724,53 @@
 
 	// import $ from "jquery";
 
-	var Child = function (_Component) {
-		_inherits(Child, _Component);
+	var My_input = function (_Component) {
+		_inherits(My_input, _Component);
 
-		function Child(props) {
-			_classCallCheck(this, Child);
+		function My_input(props) {
+			_classCallCheck(this, My_input);
 
-			var _this = _possibleConstructorReturn(this, (Child.__proto__ || Object.getPrototypeOf(Child)).call(this, props));
+			var _this = _possibleConstructorReturn(this, (My_input.__proto__ || Object.getPrototypeOf(My_input)).call(this, props));
 
-			_this.onInteraction = _this.onInteraction.bind(_this);
+			_this.onFiddle = _this.onFiddle.bind(_this);
 			return _this;
 		}
 
-		_createClass(Child, [{
-			key: 'componentDidMount',
+		_createClass(My_input, [{
+			key: "componentDidMount",
 			value: function componentDidMount() {
-				console.log('child mounted');
+				// console.log(this.props.name+' mounted');
 			}
 		}, {
-			key: 'onInteraction',
-			value: function onInteraction(e) {}
+			key: "onFiddle",
+			value: function onFiddle(e) {
+				// console.log(e.target.value);
+				this.props.onChange(e.target.value);
+			}
 		}, {
-			key: 'render',
+			key: "render",
 			value: function render() {
 				return _react2.default.createElement(
-					'div',
+					"div",
 					null,
-					_react2.default.createElement('div', null)
+					_react2.default.createElement("input", {
+						className: "search_input",
+						onChange: this.onFiddle, type: "text",
+						placeholder: "Begin typing to search through Flickr's most recent uploads." })
 				);
 			}
 		}]);
 
-		return Child;
+		return My_input;
 	}(_react.Component);
 
-	Child.defaultProps = {
-		name: 'image',
-
-		styles: {
-			height: 200,
-			float: 'left',
-			backgroundColor: 'white'
-		}
+	My_input.defaultProps = {
+		name: 'input'
 	};
 
-	exports.default = Child;
+	exports.default = My_input;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/react_sand/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "child.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/flickr_search_R/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "input.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }
 /******/ ]);
