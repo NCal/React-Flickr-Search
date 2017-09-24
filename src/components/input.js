@@ -1,32 +1,19 @@
 import React, { Component } from 'react';
-// import $ from "jquery";
 
-class My_input extends Component {
+export default class MyInput extends Component {
 	constructor(props) {
 		super(props);
-			this.onFiddle = this.onFiddle.bind(this);
 	}
-	componentDidMount() {
-		// console.log(this.props.name+' mounted');
-	}
-	onFiddle(e){
-		// console.log(e.target.value);
+	onFiddle = (e) => {
 		this.props.onChange(e.target.value);
 	}
-	render() {
+	render = () => {
 		return (<div>
 					<input 
 						className="search_input" 
-						onChange={this.onFiddle}type="text" 
+						onChange={this.onFiddle} type="text" 
 						placeholder="Begin typing to search through Flickr's most recent uploads."/>
 				</div>
 		)
 	}
 }
-
-My_input.defaultProps = {
-	name: 'input'
-};
-
-
-export default My_input;

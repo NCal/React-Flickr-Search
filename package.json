@@ -12,12 +12,18 @@
   "author": "NCB",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-stage-1": "^6.24.1",
     "compass": "^0.1.1",
+    "foundation-sites": "^6.4.3",
     "jquery": "^3.1.1",
+    "jsonp": "^0.2.1",
     "node-sass": "^4.2.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-foundation": "^0.7.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
     "sass-loader": "^4.1.1"
   },
   "devDependencies": {

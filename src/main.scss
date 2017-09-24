@@ -1,7 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Space+Mono');
 @import "../node_modules/foundation-sites/scss/foundation";
 
 @include foundation-flex-grid;
 @include foundation-flex-classes;
 @include foundation-everything;
 
+/* ===== CONTAINER ELEMENT STYLES ===== */
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #576366;
+  margin: 0;
+  font-family: 'space mono', sans-serif;
+  background-color: #fff;
+}
 
+.main_container {
+  margin:  0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.application {
+  padding: 10px;
+  margin-top: 10px;
+  height: auto;
+} 
+
+/* IMAGES */
+.photo_container {
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; 
+  left: 45px;
+}
+
+.outer_image {
+  width: 200px;
+  height: 130px;
+  overflow: hidden;
+  margin: 5px;
+  padding: 0;
+  float: left;
+  background-size: cover;
+  }
+
+.image {
+  background-size: cover;
+  width: 100%;
+  opacity: .8;
+  transition: .3s;
+}
+
+.image:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+/* SEARCH */
+.search_title {
+  opacity: .3;
+  margin: 0;
+}
