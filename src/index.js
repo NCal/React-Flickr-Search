@@ -13,7 +13,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 
 render(
-  <Provider store={createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}>
+  <Provider store={createStoreWithMiddleware(reducers)}>
     <App title="App" />
   </Provider>
   , document.getElementById('root'));
