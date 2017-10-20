@@ -84,7 +84,7 @@
 
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRedux.Provider,
-	  { store: createStoreWithMiddleware(_reducers2.default) },
+	  { store: createStoreWithMiddleware(_reducers2.default, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) },
 	  _react2.default.createElement(_app2.default, { title: 'App' })
 	), document.getElementById('root'));
 
