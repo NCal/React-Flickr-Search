@@ -11,7 +11,6 @@ import './main.scss';
 // Components
 import App from './containers/app.js';
 
-
 const store = createStore(
    reducers,
    undefined,
